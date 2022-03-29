@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #13f6b1;
+  display: flex;
+  padding: 0 15rem;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.login_sign {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  font-size: 2.4rem;
+  color: white;
+}
+.login,
+.sign_up {
+  font-weight: 400;
+}
+.circle {
+  background-color: white;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 20px;
+}
+.aylana {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  background-color: #1f2c30;
+  border-radius: 50%;
+  color: #13f6b1;
+  margin-top: -0.5rem;
+  transition: 2s all;
+}
+.section {
+  position: relative;
+  width: 70rem;
+  height: 50rem;
+  /* background-color: red; */
+  perspective: 150rem;
+}
+section {
+  padding: 3rem;
+  background-color: #2b2937;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+.front {
+  top: 0;
+  left: 20%;
+  position: absolute;
+  /* perspective: 150rem; */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  transition: 2s all;
+  height: 80%;
+  transform: rotateY(0);
+}
+.back {
+  top: 0;
+  left: 20%;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  transform: rotateY(-180deg);
+  transition: 2s all;
+  height: 80%;
+}
+.name {
+  font-weight: 400;
+}
+form {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  transform-style: preserve-3d;
+}
+input {
+  width: 80%;
+  height: 3.5rem;
+  outline: none;
+  background-color: #1f1d29;
+  border: none;
+  color: #13f6b1;
+  transform-style: preserve-3d;
+  padding: 10px;
+}
+.submit {
+  display: inline-block;
+  width: 10rem;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+
+  background-color: #13f6b1;
+  color: white;
+  border: none;
+  transform-style: preserve-3d;
+}
+
+.a {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+}
+.input {
+  transition: 2s all;
+}
